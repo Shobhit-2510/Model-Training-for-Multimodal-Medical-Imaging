@@ -1,0 +1,20 @@
+name: medgemma
+channels:
+  - conda-forge
+  - defaults
+  - nvidia
+  - pytorch
+dependencies:
+  - python>=3.10
+  - numpy
+  - datasets=4.0.0
+  - jupyter
+  - evaluate=0.4.6
+  - peft=0.17
+  - tensorboard=2.19
+  - transformers=4.56
+  - trl=0.23
+  - pip
+  - pip: 
+    - torch --index-url https://download.pytorch.org/whl/cu121
+    - torchvision --index-url https://download.pytorch.org/whl/cu121
